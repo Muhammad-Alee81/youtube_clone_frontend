@@ -1,9 +1,10 @@
 import "./App.css";
+import MainLayout from "./components/layout/Main/MainLayout";
 
 function App() {
   return (
     <>
-      <h2>Hello Word</h2>
+      <MainLayout />
     </>
   );
 }
