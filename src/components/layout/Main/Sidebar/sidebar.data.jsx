@@ -1,7 +1,22 @@
-import user from "/user.png";
-import { House } from "lucide-react";
+import {
+  Clock,
+  House,
+  IdCard,
+  ListPlus,
+  RotateCcwClock,
+  ThumbsUp,
+  TvMinimalPlay,
+} from "lucide-react";
 
-const HouseIcon = <House size={10} strokeWidth={1} />
+import user from "/user.png";
+
+const HouseIcon = <House size={10} strokeWidth={1} />;
+const channelIcon = <IdCard size={68} strokeWidth={1} />;
+const yourVideosIcon = <TvMinimalPlay size={68} strokeWidth={1} />;
+const playListIcon = <ListPlus size={68} strokeWidth={1} />;
+const HistoryIcon = <RotateCcwClock size={68} strokeWidth={1} />;
+const watchLaterIcon = <Clock size={68} strokeWidth={1} />;
+const LikeIcon = <ThumbsUp size={68} strokeWidth={1} />;
 
 export const mainMenu = [
   {
@@ -10,9 +25,9 @@ export const mainMenu = [
   },
 ];
 
-export const userMenu = [
+export const subscribedChannels = [
   {
-    title: "Chai or Code",
+    title: "Chai or code ",
     icon: user,
   },
   {
@@ -20,7 +35,27 @@ export const userMenu = [
     icon: user,
   },
   {
+    title: "Ducky Reloaded",
+    icon: user,
+  },
+  {
     title: "Kohistani",
+    icon: user,
+  },
+  {
+    title: "Alan Walkers",
+    icon: user,
+  },
+  {
+    title: "HBO",
+    icon: user,
+  },
+  {
+    title: "Chai or code ",
+    icon: user,
+  },
+  {
+    title: "Code with Harry",
     icon: user,
   },
   {
@@ -28,7 +63,42 @@ export const userMenu = [
     icon: user,
   },
   {
-    title: "Romaisa khan",
+    title: "Kohistani",
     icon: user,
+  },
+  {
+    title: "Alan Walkers",
+    icon: user,
+  },
+  {
+    title: "HBO",
+    icon: user,
+  },
+];
+
+export const userMenu = [
+  {
+    title: "Your Channel",
+    icon: channelIcon,
+  },
+  {
+    title: "History",
+    icon: HistoryIcon,
+  },
+  {
+    title: "Playlist",
+    icon: playListIcon,
+  },
+  {
+    title: "Watch Later",
+    icon: watchLaterIcon,
+  },
+  {
+    title: "Liked Videos",
+    icon: LikeIcon,
+  },
+  {
+    title: "Your Videos",
+    icon: yourVideosIcon,
   },
 ];
