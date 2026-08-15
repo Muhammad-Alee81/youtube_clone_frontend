@@ -1,4 +1,5 @@
 import {
+  CircleUserRound,
   Clock,
   House,
   IdCard,
@@ -17,11 +18,32 @@ const playListIcon = <ListPlus size={68} strokeWidth={1} />;
 const HistoryIcon = <RotateCcwClock size={68} strokeWidth={1} />;
 const watchLaterIcon = <Clock size={68} strokeWidth={1} />;
 const LikeIcon = <ThumbsUp size={68} strokeWidth={1} />;
+const personIcon = <CircleUserRound size={68} strokeWidth={1} />;
 
 export const mainMenu = [
   {
     title: "Home",
     icon: HouseIcon,
+  },
+];
+
+export const guestMenu = [
+  {
+    title: "Home",
+    icon: HouseIcon,
+  },
+
+  {
+    title: "Subscriptions",
+    icon: channelIcon,
+  },
+  {
+    title: "You",
+    icon: personIcon,
+  },
+  {
+    title: "History",
+    icon: watchLaterIcon,
   },
 ];
 

@@ -13,8 +13,12 @@ import {
 import SideContent from "./SideContent";
 import Logo from "../Navbar/components/Logo";
 import SidebarHamburger from "../Navbar/components/SidebarHamburger";
+import { useState } from "react";
+import GuestSideContent from "./GuestSideContent";
 
 const AppSidebar = () => {
+  const [user, setUser] = useState(true);
+
   return (
     <>
       <Sidebar className="border-none top-16 h-[calc(100vh-4rem)] ">
@@ -24,7 +28,8 @@ const AppSidebar = () => {
             <Logo />
           </div>
         </SidebarHeader>
-        <SideContent />
+
+        {user ? <SideContent /> : <GuestSideContent />}
       </Sidebar>
     </>
   );
