@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 const MainLayout = () => {
   return (
     <>
-      <SidebarProvider className="flex flex-col">
+      <SidebarProvider className="flex flex-col z-10">
         <Navbar />
 
         <div className="flex">

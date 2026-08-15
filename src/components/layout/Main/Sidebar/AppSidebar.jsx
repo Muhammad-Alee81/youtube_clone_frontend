@@ -17,7 +17,7 @@ import { useState } from "react";
 import GuestSideContent from "./GuestSideContent";
 
 const AppSidebar = () => {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
 
   return (
     <>
