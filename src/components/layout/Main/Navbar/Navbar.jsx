@@ -11,7 +11,7 @@ const Navbar = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   return (
     <>
-      <main className=" px-7 max-sm:px-2  max-md:px-2 max-lg:px-4 sticky top-0 bg-black z-10">
+      <main className=" px-7 max-sm:px-2  max-md:px-2 max-lg:px-4 sticky top-0 bg-black z-50">
         <div className="flex h-16 w-full items-center justify-between max-sm:h-12 ">
           {/* Left */}
           <div className="flex items-center gap-2 max-sm:gap-2 max-md:gap-1">

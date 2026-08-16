@@ -18,7 +18,7 @@ import { ChevronRight } from "lucide-react";
 const SideContent = () => {
   return (
     <>
-      <SidebarContent className="min-h-0 custom-scrollbar">
+      <SidebarContent className="min-h-0 custom-scrollbar z-50">
         {/* Main Menu  */}
         <SidebarGroup className="border-b border-b-gray-600">
           {mainMenu.map((el, i) => {

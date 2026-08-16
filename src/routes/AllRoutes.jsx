@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home } from "../pages/index";
+import { Home, WatchVideo } from "../pages/index";
 import MainLayout from "@/components/layout/Main/MainLayout";
 
 const AllRoutes = () => {
@@ -8,6 +8,7 @@ const AllRoutes = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/watch/:videoId" element={<WatchVideo />} />
         </Route>
       </Routes>
     </>

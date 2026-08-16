@@ -1,19 +1,27 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import AppSidebar from "./Sidebar/AppSidebar";
-import { SidebarContent, SidebarProvider } from "@/components/ui/sidebar";
+import {
+  SidebarContent,
+  SidebarProvider,
+  useSidebar,
+} from "@/components/ui/sidebar";
 import { Outlet } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const MainLayout = () => {
+  const location = useLocation();
+  const watchPage = location.pathname.startsWith("/watch/");
+
   return (
     <>
-      <SidebarProvider className="flex flex-col z-10">
+      <SidebarProvider className="flex flex-col" defaultOpen={!watchPage}>
         <Navbar />
 
-        <div className="flex">
+        <div className={`${watchPage ? "" : "flex"}`}>
           <AppSidebar />
 
-          <main className="flex-1 px-5">
+          <main className="flex-1">
             <Outlet />
           </main>
         </div>
