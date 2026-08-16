@@ -1,13 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar/Navbar";
 import AppSidebar from "./Sidebar/AppSidebar";
-import {
-  SidebarContent,
-  SidebarProvider,
-  useSidebar,
-} from "@/components/ui/sidebar";
-import { Outlet } from "react-router-dom";
+import { SidebarProvider } from "@/components/ui/sidebar";
+
 import { useLocation } from "react-router-dom";
+import MainPageContent from "./Sidebar/MainPageContent";
 
 const MainLayout = () => {
   const location = useLocation();
@@ -20,10 +17,7 @@ const MainLayout = () => {
 
         <div className={`${watchPage ? "" : "flex"}`}>
           <AppSidebar />
-
-          <main className="flex-1">
-            <Outlet />
-          </main>
+          <MainPageContent />
         </div>
       </SidebarProvider>
     </>
